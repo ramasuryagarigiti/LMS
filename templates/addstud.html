@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head><link rel="icon" href="static\css\icon.svg"/>
+<title>Add Student</title>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="static\css\bootstrap.css" >
+
+</head>
+<body style="background-color:black;color:white">
+
+
+<div class="jumbotron" style="background-color:#FA8072;">
+  <h1 class="display-4">Hello, {{user.name}}!</h1>
+  <p class="lead">Adding a student may take time to reflect in your web page if you are unable to see it kindly refresh the page.</p>
+  <hr class="my-4">
+  <p>The student details you are going to add must be reflected in student's feed as well as databases.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="" role="button" onClick="window.location.reload(true)">Refresh page</a>
+  </p>
+</div>
+
+<form style="padding: 50px 50px; border-radius: 100px;" method="POST">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+
+      <input type="text" class="form-control" name="name" id="inputEmail4" placeholder="Student name" required>
+    </div>
+    <div class="form-group col-md-6">
+
+      <input type="text" class="form-control" name="phn" id="inputPassword4" placeholder="Phone Number" required>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+
+      <input type="text" class="form-control" name="stdeml" id="inputEmail6" placeholder="Email" required>
+    </div>
+    <div class="form-group col-md-6">
+
+      <input type="text" class="form-control" name="pswd" id="inputPassword7" placeholder="Password" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+
+      <input type="email" class="form-control" name="ademl" id="inputEmail5" placeholder="Your Mail" required>
+    </div>
+    <div class="form-group col-md-6">
+
+      <input type="password" class="form-control" name="pin" id="inputPassword8" placeholder="Your Security pin" required>
+    </div>
+    <div class="form-group col-md-6">
+
+      <input type="text" class="form-control" name="role" id="inputEmail9" placeholder="Admin/User" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Remember Me
+      </label>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Enroll Student</button>
+
+<!--  <button type="submit" class="btn btn-primary">Sign in</button>-->
+</form>
+
+
+
+</body>
+</html>

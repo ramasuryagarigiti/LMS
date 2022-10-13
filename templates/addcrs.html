@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" href="static\css\icon.svg"/>
+<title>Add Book</title>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="static\css\bootstrap.css" >
+
+</head>
+<body style="background-color:black;color:white">
+
+
+
+<div class="jumbotron" style="background-color:#BB8FCE ;">
+  <h1 class="display-4">Hello, {{user.name}}!</h1>
+  <p class="lead">Adding a book may take time to reflect in your web page if you are unable to see it kindly refresh the page.</p>
+  <hr class="my-4">
+  <p>The books you are going to add must be reflected in student's feed as well as databases.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="" role="button" onClick="window.location.reload(true)">Refresh page</a>
+  </p>
+</div>
+
+
+<form style="padding: 50px 50px; border-radius: 100px;" method="POST">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+
+      <input type="text" class="form-control" name="crnm" id="inputEmail4" placeholder="Course name" required>
+    </div>
+    <div class="form-group col-md-6">
+
+      <input type="text" class="form-control" name="fac" id="inputPassword4" placeholder="Faculty of this course" required>
+    </div>
+  </div>
+  <div class="form-group">
+
+    <input type="text" class="form-control" name="about" id="inputAddress" placeholder="About Course" required>
+  </div>
+  <div class="form-group">
+
+    <input type="text" class="form-control" name="branch" id="inputAddress2" placeholder="Specilization">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+
+      <input type="number" class="form-control" name="fee" id="inputCity" placeholder="Fee tobe paid" required>
+
+    </div>
+<div class="form-group col-md-6">
+
+      <input type="email" class="form-control" name="cnfrmeml" placeholder="Confirm your email" required>
+    </div><div class="form-group col-md-6">
+
+      <input type="password" class="form-control" name="pin" placeholder="Security Pin" required>
+    </div>
+
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Remember Me
+      </label>
+    </div>
+  </div>
+
+<!--  <div class="form-group">-->
+<!--    <label for="exampleFormControlFile1">Select Pdf file</label>-->
+<!--    <input type="file" class="form-control-file" name="pdf" id="exampleFormControlFile1">-->
+<!--  </div>-->
+  <button class="btn btn-primary" type="submit">Submit Course</button>
+
+<!--  <button type="submit" class="btn btn-primary">Sign in</button>-->
+</form>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static\css\bootstrap.css" >
+    <link rel="icon" href="static\css\icon.svg"/>
+
+
+</head>
+<body style="background-color:black;color:white">
+
+<h1>Payment for {{values}}</h1>
+
+<form method="POST" style="padding:30px;">
+
+
+
+    <div class="input-group mb-4">
+
+  <input type="text" class="form-control" name="nm" aria-label="Default" placeholder="Payer Name" required>
+</div>
+
+    <div class="input-group mb-4">
+
+  <input type="email" class="form-control" name ="mail" aria-label="Default" placeholder="Payer Mail" required>
+</div>
+
+    <div class="input-group mb-4">
+  <input type="text" class="form-control" name="crs" aria-label="Default" placeholder="Course Name" required>
+</div>
+
+   <div class="input-group mb-4">
+
+  <input type="number" class="form-control" name="amt" aria-label="Default" placeholder="Amount" required>
+</div>
+
+<button class="btn btn-outline-danger" type="submit">Complete Registration</button>
+
+</form>
+
+
+</body>
+</html>

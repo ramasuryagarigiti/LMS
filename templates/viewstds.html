@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head><link rel="icon" href="static\css\icon.svg"/>
+<title>View Books</title>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="static\css\bootstrap.css" >
+<link rel="stylesheet" href="static\css\style.css" >
+</head>
+<body style="background-color:black;color:white">
+
+
+<div class="jumbotron" style="background-color:#452552;">
+  <h1 class="display-4">Hello, {{user.name}}!</h1>
+  <p class="lead">Sometimes adding a book may take time to reflect in your web page if you are unable to see it kindly refresh the page.</p>
+  <hr class="my-4">
+  <p>The Book details you are going to add are going to be reflected in student's feed as well.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="" role="button" onClick="window.location.reload(true)">Refresh page</a>
+  </p>
+</div>
+
+
+<script>
+function suc() {
+<a class="btn btn-primary btn-lg" href="adm" role="button">Go Back</a>
+
+  alert("Student un-enrolled successfully!");
+}
+</script>
+
+
+<table>
+  <tr>
+    {% for head in header %}
+      <th style="text-align:center">{{ head }}</th>
+    {% endfor %}
+  </tr>
+
+
+  {% for row in data %}
+    <tr>
+      {% for cell in row %}
+        <td style="padding:6px;">{{ cell }}</td>
+
+
+
+      {% endfor %}
+
+      <td style="padding:10px;">
+        <form action="" method="POST">
+
+      <div class="btn-group">
+              <a class="btn btn-outline-danger" href="#" role="button" id="dropdownMenuLink" onclick="suc()" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Delete Student
+              </a>
+      </div>
+        </form>
+      </td>
+
+    </tr>
+  {% endfor %}
+</table>
+
+
+
+
+
+</body>
+</html>
